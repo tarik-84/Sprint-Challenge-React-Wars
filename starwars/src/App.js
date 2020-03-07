@@ -1,5 +1,13 @@
 import React from 'react';
 import './App.css';
+import StarWars from './components/StarWars'
+import styled from 'styled-components';
+
+
+const ScrollContainer = styled.div`
+  height: 100vh;
+  overflow: hidden;
+  `;
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -9,10 +17,15 @@ const App = () => {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
 
+
+  
   return (
+  <ScrollContainer>
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      <StarWars />
     </div>
+  </ScrollContainer>
   );
 }
 
